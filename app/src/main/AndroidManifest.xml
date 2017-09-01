@@ -19,7 +19,9 @@
         <activity android:name=".Activity.MainActivity" />
         <activity android:name=".Activity.Cody.ClosetActivity" />
         <activity android:name=".Activity.Cody.CodyMainActivity" />
-        <activity android:name=".Activity.Shopping.ShoppingMainActivity"></activity>
+        <activity android:name=".Activity.Shopping.ShoppingMainActivity" />
+        <activity android:name=".Activity.Shopping.ShoppingItemActivity" />
+        <activity android:name=".Activity.Shopping.ShoppingDetailActivity"></activity>
     </application>
 
 </manifest>
