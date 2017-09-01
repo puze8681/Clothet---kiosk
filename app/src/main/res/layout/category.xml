@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/category_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|center_horizontal">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/category_gl2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.38" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/category_gl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.60" />
+
+        <ImageView
+            android:id="@+id/category_img"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_closet_t"
+            app:layout_constraintBottom_toBottomOf="@id/category_gl2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/category_gl2" />
+
+        <TextView
+            android:id="@+id/category_text_ko"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            app:layout_constraintTop_toBottomOf="@id/category_gl"
+            tools:layout_editor_absoluteY="294dp"
+            tools:text="티셔츠" />
+
+        <TextView
+            android:id="@+id/category_text_en"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/nanumbarungothicbold"
+            android:gravity="center"
+            android:textSize="9sp"
+            app:layout_constraintTop_toBottomOf="@id/category_text_ko"
+            tools:text="T-shirt" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

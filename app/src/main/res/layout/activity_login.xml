@@ -7,7 +7,7 @@
     android:background="@drawable/splash_background"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context="kr.wonjun.clothet.LoginActivity">
+    tools:context="kr.wonjun.clothet.Activity.LoginActivity">
 
     <ImageView
         android:id="@+id/splash_img"

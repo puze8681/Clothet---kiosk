@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CategoryView">
+        <attr name="img" format="reference|integer" />
+        <attr name="text_ko" format="reference|string" />
+        <attr name="text_en" format="reference|string" />
+        <attr name="img_height" format="reference|dimension" />
+        <attr name="container_background" format="reference|integer"/>
+        <attr name="text_ko_color" format="reference|integer"/>
+        <attr name="text_en_color" format="reference|integer"/>
+
+    </declare-styleable>
+</resources>

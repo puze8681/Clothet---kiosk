@@ -4,6 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kr.wonjun.clothet.MainActivity">
+    tools:context="kr.wonjun.clothet.Activity.MainActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/closet_gl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="56dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/closet_gl_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.54" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/closet_gl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/closet_gl_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/activity_horizontal_margin" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/closet_gl_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/activity_horizontal_margin" />
+
+    <kr.wonjun.clothet.View.CategoryView
+        android:id="@+id/goToShopping"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/closet_vertical_margin"
+        android:layout_marginBottom="@dimen/closet_vertical_margin"
+        app:img="@drawable/ic_main_stylist"
+        app:img_height="75dp"
+        app:layout_constraintLeft_toLeftOf="@id/closet_gl_left"
+        app:layout_constraintRight_toRightOf="@id/closet_gl_right"
+        app:layout_constraintTop_toBottomOf="@id/closet_gl_top"
+        app:layout_constraintBottom_toTopOf="@id/closet_gl_center"
+        app:text_ko="쇼핑하러 가기"
+        app:text_en="Go to Shopping" />
+
+    <kr.wonjun.clothet.View.CategoryView
+        app:container_background="@drawable/gradation_go_to_cody"
+        app:text_ko_color="@color/colorWhite"
+        android:id="@+id/goToCody"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/closet_vertical_margin"
+        android:layout_marginBottom="@dimen/closet_vertical_margin"
+        app:img="@drawable/ic_main_styilst"
+        app:img_height="75dp"
+        app:layout_constraintLeft_toLeftOf="@id/closet_gl_left"
+        app:layout_constraintRight_toRightOf="@id/closet_gl_right"
+        app:layout_constraintTop_toBottomOf="@id/closet_gl_center"
+        app:layout_constraintBottom_toTopOf="@id/closet_gl_bottom"
+        app:text_ko="코디하러 가기"
+        app:text_en="Go to Cody" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package kr.wonjun.clothet
+package kr.wonjun.clothet.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.LinearLayout
 import kotlinx.android.synthetic.main.activity_login.*
+import kr.wonjun.clothet.R
 import org.jetbrains.anko.startActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -36,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
     fun translateIcon(): Unit {
 
 
-        val icon: ImageView = findViewById(R.id.splash_img) as ImageView
+        val icon: ImageView = findViewById(R.id.splash_img)
         anim = AnimationUtils.loadAnimation(this, R.anim.translate)
         anim.reset()
 
@@ -65,7 +66,7 @@ class LoginActivity : AppCompatActivity() {
 
     fun alphaLayout(): Unit {
 
-        val animlayout: LinearLayout = findViewById(R.id.login_window) as LinearLayout
+        val animlayout: LinearLayout = findViewById(R.id.login_window)
 
         anim = AnimationUtils.loadAnimation(this, R.anim.alpha)
         anim.reset()
