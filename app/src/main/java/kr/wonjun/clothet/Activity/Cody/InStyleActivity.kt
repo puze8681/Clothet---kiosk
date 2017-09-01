@@ -13,6 +13,7 @@ class InStyleActivity : AppCompatActivity() {
         setContentView(R.layout.activity_in_style)
 
         var isFancy = false
+
         inStyle_FAB.setOnClickListener {
             onBackPressed()
         }
@@ -29,6 +30,5 @@ class InStyleActivity : AppCompatActivity() {
                 isFancy = true
             }
         }
-    }
     }
 }
