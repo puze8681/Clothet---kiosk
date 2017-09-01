@@ -36,6 +36,6 @@ class SaveCodyFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance(): MyCodyFragment = MyCodyFragment()
+        fun newInstance(): SaveCodyFragment = SaveCodyFragment()
     }
 }

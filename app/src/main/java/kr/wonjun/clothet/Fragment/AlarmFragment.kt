@@ -17,8 +17,7 @@ import java.util.*
 class AlarmFragment : Fragment() {
     var items: ArrayList<AlarmItem> = ArrayList()
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view: View = inflater!!.inflate(R.layout.fragment_alarm, container, false)
         val adapter = AlarmRecyclerViewAdapter(items, context)
 

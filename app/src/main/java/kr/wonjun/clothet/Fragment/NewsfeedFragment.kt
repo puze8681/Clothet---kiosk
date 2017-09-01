@@ -8,7 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_newsfeed.view.*
-import kr.wonjun.clothet.Activity.InStyleActivity
+import kr.wonjun.clothet.Activity.Cody.InStyleActivity
 import kr.wonjun.clothet.Adapter.CodyRecyclerViewAdapter
 import kr.wonjun.clothet.R
 import org.jetbrains.anko.support.v4.startActivity
@@ -31,7 +31,7 @@ class NewsfeedFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance(): MyCodyFragment = MyCodyFragment()
+        fun newInstance(): NewsfeedFragment = NewsfeedFragment()
     }
 
 }
