@@ -17,37 +17,5 @@ class ShoppingDetailActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        when(requestCode){
-            1->loadTShirt()
-            2->loadPullOver()
-            3->loadShirt()
-            4->loadCoat()
-            5->loadDress()
-            6->loadPants()
-        }
-
-        adapter.itemClick = object : ShoppingItemAdapter.ItemClick {
-            override fun onItemClick(view: View?, position: Int) {
-                startActivityForResult(intent, requestCode)
-            }
-        }
-    }
-
-    private fun loadTShirt(){
-    }
-
-    private fun loadPullOver(){
-    }
-
-    private fun loadShirt(){
-    }
-
-    private fun loadCoat(){
-    }
-
-    private fun loadDress(){
-    }
-
-    private fun loadPants(){
     }
 }

@@ -27,7 +27,11 @@ class ShoppingItemActivity : AppCompatActivity() {
         adapter = ShoppingItemAdapter(this, items)
         recyclerViewShoppingItem.adapter = adapter
         recyclerViewShoppingItem.layoutManager = GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false)
-
+        adapter.itemClick = object : ShoppingItemAdapter.ItemClick {
+            override fun onItemClick(view: View?, position: Int) {
+                startActivityForResult(intent, position)
+            }
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -40,12 +44,6 @@ class ShoppingItemActivity : AppCompatActivity() {
             4->loadCoat()
             5->loadDress()
             6->loadPants()
-        }
-
-        adapter.itemClick = object : ShoppingItemAdapter.ItemClick {
-            override fun onItemClick(view: View?, position: Int) {
-                startActivityForResult(intent, requestCode)
-            }
         }
     }
 
