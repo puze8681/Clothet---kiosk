@@ -21,7 +21,12 @@
         <activity android:name=".Activity.Cody.CodyMainActivity" />
         <activity android:name=".Activity.Shopping.ShoppingMainActivity" />
         <activity android:name=".Activity.Shopping.ShoppingItemActivity" />
-        <activity android:name=".Activity.Shopping.ShoppingDetailActivity"></activity>
+        <activity android:name=".Activity.Shopping.ShoppingDetailActivity" />
+        <activity android:name=".Fragment.AlarmFrgment" />
+        <activity android:name=".Fragment.AlarmFragment" />
+        <activity android:name=".Fragment.NewsfeedFragment" />
+        <activity android:name=".Fragment.SaveCodyFragment" />
+        <activity android:name=".Activity.Cody.InStyleActivity"></activity>
     </application>
 
 </manifest>
